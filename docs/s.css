@@ -1,3 +1,5 @@
+
+:root{
   --bg:#07070a;--surface:#101015;--text:#f1ede4;--muted:#8d8a84;--accent:#e8b04a;--border:#22222a;
   color-scheme:dark;box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
@@ -75,3 +77,4 @@ h1 span:nth-child(2){animation-delay:2.0s;color:transparent;-webkit-text-stroke:
 /* reveal */
 .rv{opacity:0;transform:translateY(40px);filter:blur(6px);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.2,.7,.2,1),filter 1.2s}
 .rv.on{opacity:1;transform:none;filter:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}h1 span,.pre,.tag,.scroll{opacity:1;filter:none;transform:none}.rv{opacity:1;transform:none;filter:none}}
