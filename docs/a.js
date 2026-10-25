@@ -1,5 +1,4 @@
 
-
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.15});
 document.querySelectorAll(".rv").forEach(function(el,i){el.style.transitionDelay=(i%3)*0.12+"s";io.observe(el)});
 var g=document.getElementById("glow");
